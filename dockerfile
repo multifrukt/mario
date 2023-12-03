@@ -1,7 +1,6 @@
 FROM nginx:latest
 
-COPY ./index.html /usr/share/nginx/html/index.html
-COPY ./game.js /usr/share/nginx/html/game.js
+COPY html_game/* /usr/share/nginx/html/
 
 EXPOSE 80
 
